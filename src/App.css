@@ -1,0 +1,25 @@
+ul{margin:0;padding:0;list-style: none;}
+figure{margin:0;}
+body{background-color: #a681ba;background-image: url("./assets/bg_mob.jpg");background-repeat: no-repeat;background-repeat: no-repeat;;background-position: top;background-size: contain;}
+.App-header{text-align: center;padding:55px 0;}
+.App-header img{width: 70%; height: auto;margin:0 auto;max-width: 424px;}
+.section_wrapper{padding:0 20px;}
+.playlist_list{
+  overflow: auto;white-space: nowrap;
+  /*display: flex;flex-direction: row;flex-wrap: nowrap;justify-content: flex-start;align-items: flex-start;*/
+}
+.playlist_list .videoitem{display: inline-block;white-space: normal;
+  width: 100%; margin-bottom:20px; margin-right: 20px;
+}
+.fig_item{border-radius: 11px;overflow: hidden;}
+.fig_item img{width: 100%;height: auto;}
+.fig_caption{color:#fff;}
+.fig_caption h2{margin:0;font-size: 20px;line-height: 24px}
+.fig_caption p{margin: 10px 0 0 0;font-size: 14px;line-height: 20px;}
+
+@media only screen and (min-width:420px){
+  body{background-image: url("./assets/bg_tab.jpg");}
+}
+@media only screen and (min-width:1024px){
+    body{background-image: url("./assets/bg_des.jpg");}
+}

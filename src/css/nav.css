@@ -1,0 +1,6 @@
+.nav_list{text-align: center;display: flex;flex-wrap: wrap;justify-content: center;}
+.nav_item{width:140px;height: 90px;display: grid;place-items:center;margin:12px;}
+.nav_item.inicio{background-image: url('../assets/home-04.svg');background-position: center;background-repeat: no-repeat;background-size: contain;}
+.nav_item.twitter{background-image: url('../assets/tiktok-06.svg');background-position: center;background-repeat: no-repeat;background-size: contain;}
+.nav_item.acerca{background-image: url('../assets/about-05.svg');background-position: center;background-repeat: no-repeat;background-size: contain;}
+.nav_item.contacto{background-image: url('../assets/contact-07.svg');background-position: center;background-repeat: no-repeat;background-size: contain;}
