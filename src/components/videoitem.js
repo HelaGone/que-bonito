@@ -1,11 +1,8 @@
-import React, {Component, Fragment} from 'react';
+import React, {Fragment} from 'react';
 import {Link} from 'react-router-dom';
 
 const VideoItem = (props) => {
-  let {
-    vid,title,thumb,description,handleClick
-  } = props;
-
+  let {vid, title, thumb, description} = props;
   return(
     <Fragment>
       <li className="videoitem">

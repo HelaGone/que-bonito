@@ -1,8 +1,6 @@
-import dummy_data from './assets/dummy_data.json';
+// import dummy_data from './assets/dummy_data.json';
 import './App.css';
 import {Component} from 'react';
-import VideoItem from './components/videoitem.js';
-import YouTube from "react-youtube";
 import Header from './components/Header.js';
 import Home from './screens/Home.js';
 import Player from './screens/Player.js';
@@ -10,7 +8,7 @@ import Acerca from './screens/Acerca.js';
 import Contacto from './screens/Contacto.js';
 import Twifeed from './screens/Twifeed.js';
 import Navigation from './components/Navigation.js';
-import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
 class App extends Component{
   constructor(props){
@@ -31,7 +29,7 @@ class App extends Component{
 
   render(){
     // let renderIt = false;
-    let {playlist, renderPlayer, playThis} = this.state;
+    let {playlist, playThis} = this.state;
 
     // if(this.state.playlist.length > 0){
     //   renderIt = true;
@@ -43,7 +41,7 @@ class App extends Component{
           <Header />
           <Switch>
             <Route path="/" exact render={(props) => <Home playlist={playlist} handleClick={this.handleClick} {...props}/> } />
-            <Route path="/player:vidID" render={(props) => <Player playThis={playThis} />} />
+            <Route path="/player/:vidID" render={(props) => <Player playThis={playThis} {...props}/>} />
             <Route path="/acerca" render={(props) => <Acerca />} />
             <Route path="/contacto" render={(props) => <Contacto />} />
             <Route path="/twifeed" render={(props) => <Twifeed />} />
