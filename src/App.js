@@ -37,7 +37,7 @@ class App extends Component{
 
     return (
       <Router>
-        <section className="App">
+        <section className="App limit_wrapper">
           <Header />
           <Switch>
             <Route path="/" exact render={(props) => <Home playlist={playlist} handleClick={this.handleClick} {...props}/> } />

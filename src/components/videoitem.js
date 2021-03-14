@@ -12,7 +12,7 @@ const VideoItem = (props) => {
             </Link>
             <figcaption className="fig_caption">
               <h2>{title}</h2>
-              <p>{description}</p>
+              {/*<p>{description}</p>*/}
             </figcaption>
           </figure>
       </li>
